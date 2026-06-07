@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IntellMeet AI</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            🤖 IntellMeet
+        </div>
+
+        <ul class="nav-menu">
+
+            <li class="active" data-page="dashboard">
+                <i class="fa-solid fa-chart-line"></i>
+                Dashboard
+            </li>
+
+            <li data-page="meeting">
+                <i class="fa-solid fa-video"></i>
+                Meetings
+            </li>
+
+            <li data-page="chat">
+                <i class="fa-solid fa-comments"></i>
+                Team Chat
+            </li>
+
+            <li data-page="tasks">
+                <i class="fa-solid fa-list-check"></i>
+                Tasks
+            </li>
+
+            <li data-page="summary">
+                <i class="fa-solid fa-robot"></i>
+                AI Summary
+            </li>
+
+            <li data-page="analytics">
+                <i class="fa-solid fa-chart-pie"></i>
+                Analytics
+            </li>
+
+            <li data-page="notifications">
+                <i class="fa-solid fa-bell"></i>
+                Notifications
+            </li>
+
+            <li data-page="profile">
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- MAIN -->
+
+    <main class="main-content">
+
+        <div class="topbar">
+
+            <div>
+                <h1>Enterprise Collaboration Dashboard</h1>
+                <p>Welcome back, Mayank 👋</p>
+            </div>
+
+            <div class="profile-box">
+                MS
+            </div>
+
+        </div>
+
+        <!-- DASHBOARD -->
+
+        <section class="page active-page" id="dashboard">
+
+            <div class="cards">
+
+                <div class="card">
+                    <h2>125</h2>
+                    <p>Total Meetings</p>
+                </div>
+
+                <div class="card">
+                    <h2>48</h2>
+                    <p>AI Summaries</p>
+                </div>
+
+                <div class="card">
+                    <h2>19</h2>
+                    <p>Pending Tasks</p>
+                </div>
+
+                <div class="card">
+                    <h2>96%</h2>
+                    <p>Productivity</p>
+                </div>
+
+            </div>
+
+            <div class="dashboard-grid">
+
+                <div class="panel">
+
+                    <h3>📈 Productivity Overview</h3>
+
+                    <div class="fake-chart">
+                        Chart Area
+                    </div>
+
+                </div>
+
+                <div class="panel">
+
+                    <h3>🔥 Recent Activity</h3>
+
+                    <ul>
+
+                        <li>Meeting Created</li>
+                        <li>Task Assigned</li>
+                        <li>AI Summary Generated</li>
+                        <li>New Team Member Added</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- MEETING -->
+
+        <section class="page" id="meeting">
+
+            <h2>🎥 Live Meeting Room</h2>
+
+            <div class="video-grid">
+
+                <div class="video-box">Participant 1</div>
+                <div class="video-box">Participant 2</div>
+                <div class="video-box">Participant 3</div>
+                <div class="video-box">Participant 4</div>
+
+            </div>
+
+            <div class="controls">
+
+                <button id="micBtn">
+                    🎤 Mic ON
+                </button>
+
+                <button id="cameraBtn">
+                    📷 Camera ON
+                </button>
+
+                <button>
+                    🖥 Share Screen
+                </button>
+
+                <button>
+                    ⏺ Record
+                </button>
+
+                <button class="danger">
+                    📞 End Call
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- CHAT -->
+
+        <section class="page" id="chat">
+
+            <h2>💬 Team Chat</h2>
+
+            <div class="chat-box" id="chatBox">
+
+                <div class="message">
+                    Hello Team 👋
+                </div>
+
+                <div class="message">
+                    Meeting starts in 5 minutes.
+                </div>
+
+            </div>
+
+            <div class="chat-input">
+
+                <input
+                type="text"
+                id="chatInput"
+                placeholder="Type message...">
+
+                <button id="sendBtn">
+                    Send
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- TASKS -->
+
+        <section class="page" id="tasks">
+
+            <h2>📋 Task Board</h2>
+
+            <div class="task-input">
+
+                <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter Task">
+
+                <button id="addTaskBtn">
+                    Add Task
+                </button>
+
+            </div>
+
+            <div id="taskList">
+
+                <div class="task">
+                    Frontend Development
+                </div>
+
+                <div class="task">
+                    Backend API Integration
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- AI SUMMARY -->
+
+        <section class="page" id="summary">
+
+            <h2>🤖 AI Meeting Summary</h2>
+
+            <textarea rows="12">
+
+Meeting Completed Successfully
+
+Key Decisions:
+- UI Approved
+- Backend Integration Pending
+
+Action Items:
+- Mayank -> Frontend
+- Team -> Testing
+
+            </textarea>
+
+        </section>
+
+        <!-- ANALYTICS -->
+
+        <section class="page" id="analytics">
+
+            <h2>📊 Analytics Dashboard</h2>
+
+            <div class="analytics-grid">
+
+                <div class="analytic-card">
+                    Weekly Meetings
+                </div>
+
+                <div class="analytic-card">
+                    Productivity Score
+                </div>
+
+                <div class="analytic-card">
+                    Task Completion
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- NOTIFICATIONS -->
+
+        <section class="page" id="notifications">
+
+            <h2>🔔 Notifications</h2>
+
+            <div class="notification">
+                New Meeting Scheduled
+            </div>
+
+            <div class="notification">
+                AI Summary Ready
+            </div>
+
+            <div class="notification">
+                New Task Assigned
+            </div>
+
+        </section>
+
+        <!-- PROFILE -->
+
+        <section class="page" id="profile">
+
+            <h2>👤 Profile</h2>
+
+            <div class="panel">
+
+                <p><b>Name:</b> Mayank Shakya</p>
+
+                <p><b>Role:</b> MCA Student</p>
+
+                <p><b>Project:</b> IntellMeet AI</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
